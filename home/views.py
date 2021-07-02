@@ -1,5 +1,6 @@
 from django.shortcuts import render,HttpResponse
 from home.models import Task
+from django.contrib.auth.mixins import LoginRequiredMixin
 # Create your views here.
 def home(request):
     context= {'success': False}
